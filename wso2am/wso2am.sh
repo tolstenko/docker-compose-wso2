@@ -10,4 +10,6 @@ docker run --name=wso2am \
 -p 7711:7711 \
 -p 7611:7611 \
 -p 10397:10397 \
+--mount type=bind,source="$(pwd)"/conf,target=/home/wso2carbon/wso2am-2.6.0/repository/conf \
+-v "$(pwd)"/logs:/home/wso2carbon/wso2am-2.6.0/repository/logs \
 -d wso2/wso2am:2.6.0
