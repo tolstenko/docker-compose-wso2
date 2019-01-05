@@ -1,0 +1,25 @@
+version: '3.2'
+services:
+  wso2is:
+    image: wso2/wso2am:2.6.0
+    ports:
+      - "5672:5672"
+      - "7711:7711"
+      - "7611:7611"
+      - "8243:8243"
+      - "8280:8280"
+      - "9099:9099"
+      - "9443:9443"
+      - "9611:9611"
+      - "9711:9711"
+      - "9763:9763"
+      - "10397:10397"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2am-2.6.0/repository/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2am-2.6.0/repository/logs
+    container_name: wso2am
+  

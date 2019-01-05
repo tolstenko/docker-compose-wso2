@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  wso2is:
+    image: wso2/wso2ei-integrator:6.4.0
+    ports:
+      - "4100:4100"
+      - "8243:8243"
+      - "8280:8280"
+      - "9443:9443"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2ei-6.4.0/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2ei-6.4.0/repository/logs
+    container_name: wso2ei
+  

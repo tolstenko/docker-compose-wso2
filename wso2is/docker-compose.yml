@@ -1,0 +1,19 @@
+version: '3.2'
+services:
+  wso2is:
+    image: wso2/wso2is:5.7.0
+    ports:
+      - "4000:4000"
+      - "8000:8000"
+      - "9443:9443"
+      - "9763:9763"
+      - "10500:10500"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2is-5.7.0/repository/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2is-5.7.0/repository/logs
+    container_name: wso2is
+  
