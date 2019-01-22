@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  wso2ei-msf4j:
+    image: wso2/wso2ei-msf4j:6.4.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/logs
+      - type: bind
+        source: ./microservices
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices
+    container_name: wso2ei-msf4j

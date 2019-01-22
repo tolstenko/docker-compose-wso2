@@ -1,6 +1,6 @@
-version: '3.2'
+version: '3.7'
 services:
-  wso2is:
+  wso2ei-integrator:
     image: wso2/wso2ei-integrator:6.4.0
     ports:
       - "4100:4100"
@@ -14,5 +14,5 @@ services:
       - type: bind
         source: ./logs
         target: /home/wso2carbon/wso2ei-6.4.0/repository/logs
-    container_name: wso2ei
+    container_name: wso2ei-integrator
   

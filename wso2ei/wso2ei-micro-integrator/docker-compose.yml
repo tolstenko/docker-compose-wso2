@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  wso2ei-micro-integrator:
+    image: wso2/wso2ei-micro-integrator:6.4.0
+    ports:
+      - "8253:8253"
+      - "8290:8290"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/micro-integrator/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/micro-integrator/repository/logs/:ro
+    container_name: wso2ei-micro-integrator
+  
+
+  

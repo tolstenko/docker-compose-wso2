@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  wso2sp-manager:
+    image: wso2/wso2sp-manager:4.3.0
+    ports:
+      - "9190:9190"
+      - "9543:9543"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/manager/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/manager/logs
+    container_name: wso2sp-manager
+
+

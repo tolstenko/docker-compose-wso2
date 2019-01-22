@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  wso2sp-editor:
+    image: wso2/wso2sp-editor:4.3.0
+    ports:
+      - "7370:7370"
+      - "7614:7614"
+      - "7714:7714"
+      - "9390:9390"
+      - "9614:9614"
+      - "9714:9714"
+      - "9743:9743"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/editor/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/editor/logs
+    container_name: wso2sp-editor
+
+

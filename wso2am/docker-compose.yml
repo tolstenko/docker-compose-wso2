@@ -1,6 +1,6 @@
-version: '3.2'
+version: '3.7'
 services:
-  wso2is:
+  wso2am:
     image: wso2/wso2am:2.6.0
     ports:
       - "5672:5672"

@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  wso2ei-business-process:
+    image: wso2/wso2ei-business-process:6.4.0
+    ports:
+      - "9445:9445"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/business-process/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/business-process/repository/logs
+    container_name: wso2ei-business-process
+  

@@ -1,4 +1,4 @@
-version: '3.2'
+version: '3.7'
 services:
   wso2is:
     image: wso2/wso2is:5.7.0

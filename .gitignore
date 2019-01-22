@@ -1,6 +1,5 @@
 
-\.DS_Store
+.DS_Store
 
-wso2am/logs
-wso2ei/logs
-wso2is/logs
+*.log
+*.out

@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  wso2sp-worker:
+    image: wso2/wso2sp-worker:4.3.0
+    ports:
+      - "7070:7070"
+      - "7443:7443"
+      - "7611:7611"
+      - "7711:7711"
+      - "9090:9090"
+      - "9443:9443"
+      - "9612:9612"
+      - "9712:9712"
+    volumes:
+      - type: bind
+        source: ./conf
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/worker/conf
+      - type: bind
+        source: ./logs
+        target: /home/wso2carbon/wso2sp-4.3.0/wso2/worker/logs
+    container_name: wso2sp-worker
+
+
