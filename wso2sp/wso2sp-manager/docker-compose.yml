@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2sp-manager:
     image: wso2/wso2sp-manager:4.3.0
+    hostname: wso2sp-manager
     ports:
       - "9190:9190"
       - "9543:9543"

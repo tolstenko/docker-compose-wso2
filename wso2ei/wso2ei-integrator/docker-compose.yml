@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2ei-integrator:
     image: wso2/wso2ei-integrator:6.4.0
+    hostname: wso2ei-integrator
     ports:
       - "4100:4100"
       - "8243:8243"

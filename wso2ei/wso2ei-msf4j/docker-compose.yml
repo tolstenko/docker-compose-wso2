@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2ei-msf4j:
     image: wso2/wso2ei-msf4j:6.4.0
+    hostname: wso2ei-msf4j
     ports:
       - "9090:9090"
     volumes:

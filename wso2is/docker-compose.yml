@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2is:
     image: wso2/wso2is:5.7.0
+    hostname: wso2is
     ports:
       - "4000:4000"
       - "8000:8000"

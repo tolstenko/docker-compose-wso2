@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2ei-micro-integrator:
     image: wso2/wso2ei-micro-integrator:6.4.0
+    hostname: wso2ei-micro-integrator
     ports:
       - "8253:8253"
       - "8290:8290"

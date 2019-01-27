@@ -2,6 +2,7 @@ version: '3.7'
 services:
   wso2sp-worker:
     image: wso2/wso2sp-worker:4.3.0
+    hostname: wso2sp-worker
     ports:
       - "7070:7070"
       - "7443:7443"
