@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   wso2am:
-    image: wso2/wso2am:2.6.0
+    build: .
     hostname: wso2am
     ports:
       - "80:80"
