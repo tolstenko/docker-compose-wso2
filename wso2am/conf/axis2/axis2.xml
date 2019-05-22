@@ -461,7 +461,7 @@
            Uncomment the following if you are deploying this within an application server. You
            need to specify the HTTP port of the application server
         -->
-        <!--<parameter name="port">9763</parameter>-->
+        <!--<parameter name="port">80</parameter>-->
 
         <!--
        Uncomment the following to enable Apache2 mod_proxy. The port on the Apache server is 80
@@ -476,7 +476,7 @@
            Uncomment the following if you are deploying this within an application server. You
            need to specify the HTTPS port of the application server
         -->
-        <!--<parameter name="port">9443</parameter>-->
+        <!--<parameter name="port">443</parameter>-->
 
         <!--
        Uncomment the following to enable Apache2 mod_proxy. The port on the Apache server is 443

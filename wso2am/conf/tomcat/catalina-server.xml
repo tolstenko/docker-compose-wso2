@@ -26,8 +26,8 @@
         proxyPort="80"
         -->
         <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
-                   port="9763"
-                   redirectPort="9443"
+                   port="80"
+                   redirectPort="443"
                    bindOnInit="false"
                    maxHttpHeaderSize="8192"
                    acceptorThreadCount="2"
@@ -51,7 +51,7 @@
         Added sslEnabledProtocols="TLSv1,TLSv1.1,TLSv1.2" for poodle vulnerability fix
         -->
         <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
-                   port="9443"
+                   port="443"
                    bindOnInit="false"
                    sslProtocol="TLS"
                    sslEnabledProtocols="TLSv1,TLSv1.1,TLSv1.2"

@@ -36,7 +36,7 @@ broker compoent and parameters.
                          type="local"> -->
            <!--  <remoteMessageBroker>
                 <hostName>localhost</hostName>
-                <servicePort>9443</servicePort>
+                <servicePort>443</servicePort>
                 <webContext>/</webContext>
                 <userName>admin</userName>
                 <password>admin</password>

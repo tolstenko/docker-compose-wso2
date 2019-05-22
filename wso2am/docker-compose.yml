@@ -4,6 +4,8 @@ services:
     image: wso2/wso2am:2.6.0
     hostname: wso2am
     ports:
+      - "80:80"
+      - "443:443"
       - "5672:5672"
       - "7711:7711"
       - "7611:7611"
@@ -23,4 +25,3 @@ services:
         source: ./logs
         target: /home/wso2carbon/wso2am-2.6.0/repository/logs
     container_name: wso2am
-  

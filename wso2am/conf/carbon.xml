@@ -44,12 +44,12 @@
        This is will become part of the End Point Reference of the
        services deployed on this server instance.
     -->
-    <!--HostName>www.wso2.org</HostName-->
+    <HostName>35.192.133.30</HostName>
 
     <!--
     Host name to be used for the Carbon management console
     -->
-    <!--MgtHostName>mgt.wso2.org</MgtHostName-->
+    <MgtHostName>35.192.133.30</MgtHostName>
 
     <!--
         The URL of the back end server. This is where the admin services are hosted and
@@ -92,7 +92,7 @@
     <!--
     	Proxy context path is a useful parameter to add a proxy path when a Carbon server is fronted by reverse proxy. In addtion
         to the proxy host and proxy port this parameter allows you add a path component to external URLs. e.g.
-     		URL of the Carbon server -> https://10.100.1.1:9443/carbon
+     		URL of the Carbon server -> https://10.100.1.1:443/carbon
    		URL of the reverse proxy -> https://prod.abc.com/appserver/carbon
 
    	appserver - proxy context path. This specially required whenever you are generating URLs to displace in
@@ -104,7 +104,7 @@
     -->
 
     <!-- In-order to  get the registry http Port from the back-end when the default http transport is not the same-->
-    <!--RegistryHttpPort>9763</RegistryHttpPort-->
+    <!--RegistryHttpPort>80</RegistryHttpPort-->
 
     <!--
     Number of items to be displayed on a management console page. This is used at the
@@ -122,7 +122,7 @@
 
         <!-- Ports offset. This entry will set the value of the ports defined below to
          the define value + Offset.
-         e.g. Offset=2 and HTTPS port=9443 will set the effective HTTPS port to 9445
+         e.g. Offset=2 and HTTPS port=443 will set the effective HTTPS port to 9445
          -->
         <Offset>0</Offset>
 
