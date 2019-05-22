@@ -25,9 +25,9 @@
 
         proxyPort="80"
         -->
-        <!--redirectPort="443"-->
         <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
                    port="80"
+                   redirectPort="443"
                    bindOnInit="false"
                    maxHttpHeaderSize="8192"
                    acceptorThreadCount="2"
